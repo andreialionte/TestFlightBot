@@ -32,3 +32,4 @@ C:\Users\Andrei\RiderProjects\TestFlightBot\TestFlightBot\obj\Debug\net10.0\Test
 C:\Users\Andrei\RiderProjects\TestFlightBot\TestFlightBot\obj\Debug\net10.0\TestFlightBot.genruntimeconfig.cache
 C:\Users\Andrei\RiderProjects\TestFlightBot\TestFlightBot\obj\Debug\net10.0\ref\TestFlightBot.dll
 C:\Users\Andrei\RiderProjects\TestFlightBot\TestFlightBot\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Andrei\RiderProjects\TestFlightBot\TestFlightBot\obj\Debug\net10.0\TestFlightBot.sourcelink.json

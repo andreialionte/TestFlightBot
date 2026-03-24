@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestFlightBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2461d4a29fa2dcc191f71bc5c9e8391294b9a48")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestFlightBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestFlightBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
