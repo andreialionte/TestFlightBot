@@ -7,10 +7,9 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TestFlightBot/TestFlightBot.csproj", "TestFlightBot/"]
-RUN dotnet restore "TestFlightBot/TestFlightBot.csproj"
+COPY ["TestFlightBot.csproj", "."]
+RUN dotnet restore "TestFlightBot.csproj"
 COPY . .
-WORKDIR "/src/TestFlightBot"
 RUN dotnet build "./TestFlightBot.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
