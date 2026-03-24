@@ -110,7 +110,9 @@ public sealed class Bot(ILogger<Bot> logger) : BackgroundService
 
                     if (update.Message?.Text?.StartsWith("/check", StringComparison.OrdinalIgnoreCase) == true)
                     {
-                        await HandleCheckCommandAsync(cancellationToken);
+                        // Extract chat ID from the message itself
+                        var chatId = update.Message.Chat.Id;
+                        await HandleCheckCommandAsync(chatId, cancellationToken);
                     }
                 }
             }
@@ -123,7 +125,7 @@ public sealed class Bot(ILogger<Bot> logger) : BackgroundService
         }
     }
 
-    private async Task HandleCheckCommandAsync(CancellationToken cancellationToken)
+    private async Task HandleCheckCommandAsync(long chatId, CancellationToken cancellationToken)
     {
         try
         {
@@ -143,19 +145,23 @@ public sealed class Bot(ILogger<Bot> logger) : BackgroundService
                          $"{GetEmoji(betaStatus)} Spotify Beta: {betaStatus.ToUpper()}";
 
             await _telegram!.SendTextMessageAsync(
-                chatId: _chatId,
+                chatId: chatId,
                 text: message,
                 cancellationToken: cancellationToken);
 
-            logger.LogInformation("✓ Sent status check to user");
+            logger.LogInformation("✓ Sent status check to user (Chat: {ChatId})", chatId);
         }
         catch (Exception ex)
         {
             logger.LogWarning(ex, "Error handling /check command");
-            await _telegram!.SendTextMessageAsync(
-                chatId: _chatId,
-                text: "❌ Error checking status. Please try again.",
-                cancellationToken: cancellationToken);
+            try
+            {
+                await _telegram!.SendTextMessageAsync(
+                    chatId: chatId,
+                    text: "❌ Error checking status. Please try again.",
+                    cancellationToken: cancellationToken);
+            }
+            catch { /* Ignore error sending error message */ }
         }
     }
 
