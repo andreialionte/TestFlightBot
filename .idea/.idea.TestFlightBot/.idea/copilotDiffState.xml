@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/TestFlightBot/appsettings.json">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/TestFlightBot/appsettings.json" />
+              <option name="originalContent" value="{&#10;  &quot;Logging&quot;: {&#10;    &quot;LogLevel&quot;: {&#10;      &quot;Default&quot;: &quot;Information&quot;,&#10;      &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;&#10;    }&#10;  },&#10;  &quot;AllowedHosts&quot;: &quot;*&quot;&#10;}&#10;" />
+              <option name="updatedContent" value="{&#10;  &quot;Logging&quot;: {&#10;    &quot;LogLevel&quot;: {&#10;      &quot;Default&quot;: &quot;Information&quot;,&#10;      &quot;Microsoft.AspNetCore&quot;: &quot;Warning&quot;,&#10;      &quot;Microsoft.Extensions.Http&quot;: &quot;Warning&quot;&#10;    }&#10;  },&#10;  &quot;AllowedHosts&quot;: &quot;*&quot;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

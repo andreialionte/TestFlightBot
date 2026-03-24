@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "mBsiKx6PaAg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrei\\RiderProjects\\TestFlightBot\\TestFlightBot\\TestFlightBot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrei\\.nuget\\packages\\flurl\\4.0.0\\flurl.4.0.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\flurl.http\\4.0.2\\flurl.http.4.0.2.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Newtonsoft.Json' 12.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "projectPath": "C:\\Users\\Andrei\\RiderProjects\\TestFlightBot\\TestFlightBot\\TestFlightBot.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Andrei\\RiderProjects\\TestFlightBot\\TestFlightBot\\TestFlightBot.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
